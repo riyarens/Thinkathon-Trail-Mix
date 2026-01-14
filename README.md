@@ -27,9 +27,9 @@ MindSpark is an AI-powered EdTech prototype designed to support personalized lea
 
 ---
 
-## 🤖 AI Tools Used (Optional)
+## 🤖 AI Tools Used 
 - **Lovable AI** – Used for rapid prototyping, rule-based intelligent workflows, and UI generation  
-- **AI Content Generation** – Used to generate explanations, feedback, and practice questions dynamically
+- **Chatgpt,Gemini** – Used to generate explanations, feedback, and practice questions dynamically
 
 ---
 
