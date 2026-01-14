@@ -1,271 +1,436 @@
 import { QuizQuestion, LearningContent } from '@/types/learning';
 
-export const diagnosticQuiz: QuizQuestion[] = [
+// Computer Networks Question Bank - 20 Questions
+export const questionBank: QuizQuestion[] = [
   {
     id: 1,
-    question: "What is the primary function of a variable in programming?",
+    question: "What is a computer network?",
     options: [
-      "To store data values",
-      "To create visual effects",
-      "To connect to the internet",
-      "To delete files"
-    ],
-    correctAnswer: 0,
-    difficulty: 'beginner'
-  },
-  {
-    id: 2,
-    question: "Which data structure uses LIFO (Last In, First Out) principle?",
-    options: [
-      "Queue",
-      "Array",
-      "Stack",
-      "Linked List"
-    ],
-    correctAnswer: 2,
-    difficulty: 'intermediate'
-  },
-  {
-    id: 3,
-    question: "What is the time complexity of binary search?",
-    options: [
-      "O(n)",
-      "O(n²)",
-      "O(log n)",
-      "O(1)"
-    ],
-    correctAnswer: 2,
-    difficulty: 'advanced'
-  },
-  {
-    id: 4,
-    question: "Which loop is best when you know the exact number of iterations?",
-    options: [
-      "while loop",
-      "for loop",
-      "do-while loop",
-      "infinite loop"
+      "A single computer",
+      "A group of connected computers",
+      "A software program",
+      "A database"
     ],
     correctAnswer: 1,
     difficulty: 'beginner'
   },
   {
-    id: 5,
-    question: "What does API stand for?",
+    id: 2,
+    question: "Which device is used to connect multiple networks together?",
     options: [
-      "Application Programming Interface",
-      "Advanced Program Integration",
-      "Automatic Process Initialization",
-      "Application Process Integration"
+      "Switch",
+      "Hub",
+      "Router",
+      "Repeater"
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     difficulty: 'beginner'
   },
   {
-    id: 6,
-    question: "Which sorting algorithm has the best average-case time complexity?",
+    id: 3,
+    question: "What does LAN stand for?",
     options: [
-      "Bubble Sort",
-      "Selection Sort",
-      "Quick Sort",
-      "Insertion Sort"
+      "Large Area Network",
+      "Local Area Network",
+      "Logical Area Network",
+      "Limited Area Network"
+    ],
+    correctAnswer: 1,
+    difficulty: 'beginner'
+  },
+  {
+    id: 4,
+    question: "Which protocol is used to send emails?",
+    options: [
+      "FTP",
+      "SMTP",
+      "HTTP",
+      "TCP"
+    ],
+    correctAnswer: 1,
+    difficulty: 'intermediate'
+  },
+  {
+    id: 5,
+    question: "What is the main function of the OSI model?",
+    options: [
+      "Hardware manufacturing",
+      "Network communication standardization",
+      "Data storage",
+      "Software testing"
+    ],
+    correctAnswer: 1,
+    difficulty: 'intermediate'
+  },
+  {
+    id: 6,
+    question: "How many layers are there in the OSI model?",
+    options: [
+      "5",
+      "6",
+      "7",
+      "8"
     ],
     correctAnswer: 2,
-    difficulty: 'advanced'
+    difficulty: 'beginner'
   },
   {
     id: 7,
-    question: "What is encapsulation in OOP?",
+    question: "Which layer of the OSI model is responsible for routing?",
     options: [
-      "Hiding data within a class",
-      "Creating multiple classes",
-      "Deleting objects",
-      "Printing output"
+      "Transport",
+      "Network",
+      "Data Link",
+      "Physical"
     ],
-    correctAnswer: 0,
+    correctAnswer: 1,
     difficulty: 'intermediate'
   },
   {
     id: 8,
-    question: "Which symbol is used for single-line comments in JavaScript?",
+    question: "What is an IP address?",
     options: [
-      "/* */",
-      "#",
-      "//",
-      "<!-- -->"
+      "A physical address",
+      "A logical address",
+      "A MAC address",
+      "A port number"
+    ],
+    correctAnswer: 1,
+    difficulty: 'beginner'
+  },
+  {
+    id: 9,
+    question: "Which protocol is used for secure web communication?",
+    options: [
+      "HTTP",
+      "FTP",
+      "HTTPS",
+      "SMTP"
+    ],
+    correctAnswer: 2,
+    difficulty: 'intermediate'
+  },
+  {
+    id: 10,
+    question: "What does DNS do?",
+    options: [
+      "Encrypts data",
+      "Translates domain names to IP addresses",
+      "Sends emails",
+      "Routes packets"
+    ],
+    correctAnswer: 1,
+    difficulty: 'intermediate'
+  },
+  {
+    id: 11,
+    question: "Which topology connects all devices to a central hub?",
+    options: [
+      "Bus",
+      "Ring",
+      "Star",
+      "Mesh"
     ],
     correctAnswer: 2,
     difficulty: 'beginner'
   },
   {
-    id: 9,
-    question: "What is recursion?",
+    id: 12,
+    question: "What is the full form of TCP?",
     options: [
-      "A function that calls itself",
-      "A type of loop",
-      "A data structure",
-      "A debugging technique"
+      "Transmission Control Protocol",
+      "Transfer Communication Protocol",
+      "Technical Control Protocol",
+      "Transport Connection Protocol"
+    ],
+    correctAnswer: 0,
+    difficulty: 'beginner'
+  },
+  {
+    id: 13,
+    question: "Which device works at the Data Link layer?",
+    options: [
+      "Router",
+      "Switch",
+      "Modem",
+      "Gateway"
+    ],
+    correctAnswer: 1,
+    difficulty: 'advanced'
+  },
+  {
+    id: 14,
+    question: "What is packet switching?",
+    options: [
+      "Circuit-based communication",
+      "Data divided into packets",
+      "Direct data transfer",
+      "Wireless transmission"
+    ],
+    correctAnswer: 1,
+    difficulty: 'intermediate'
+  },
+  {
+    id: 15,
+    question: "What is the function of a firewall?",
+    options: [
+      "Increase speed",
+      "Protect network security",
+      "Store data",
+      "Convert signals"
+    ],
+    correctAnswer: 1,
+    difficulty: 'beginner'
+  },
+  {
+    id: 16,
+    question: "Which address is used for physical identification of a device?",
+    options: [
+      "IP address",
+      "MAC address",
+      "Port number",
+      "URL"
+    ],
+    correctAnswer: 1,
+    difficulty: 'intermediate'
+  },
+  {
+    id: 17,
+    question: "What type of network is the Internet?",
+    options: [
+      "LAN",
+      "MAN",
+      "WAN",
+      "PAN"
+    ],
+    correctAnswer: 2,
+    difficulty: 'beginner'
+  },
+  {
+    id: 18,
+    question: "Which protocol is used for file transfer?",
+    options: [
+      "FTP",
+      "SMTP",
+      "POP3",
+      "SNMP"
     ],
     correctAnswer: 0,
     difficulty: 'intermediate'
   },
   {
-    id: 10,
-    question: "What is the space complexity of merge sort?",
+    id: 19,
+    question: "What does bandwidth refer to?",
     options: [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n²)"
+      "Network security",
+      "Data transfer capacity",
+      "Cable length",
+      "Signal type"
+    ],
+    correctAnswer: 1,
+    difficulty: 'advanced'
+  },
+  {
+    id: 20,
+    question: "Which layer ensures error-free data transmission?",
+    options: [
+      "Application",
+      "Transport",
+      "Network",
+      "Session"
     ],
     correctAnswer: 1,
     difficulty: 'advanced'
   }
 ];
 
+// Fisher-Yates shuffle algorithm for randomization
+function shuffleArray<T>(array: T[]): T[] {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
+// Generate a random quiz of 10 questions from the question bank
+export function generateRandomQuiz(count: number = 10): QuizQuestion[] {
+  const shuffled = shuffleArray(questionBank);
+  return shuffled.slice(0, count);
+}
+
+// AI-generated feedback messages based on learning level
+export const feedbackMessages = {
+  beginner: [
+    "🌱 Great start! You're building a foundation in networking concepts. Let's strengthen your basics step by step.",
+    "📚 Every expert was once a beginner! Focus on understanding core concepts like LAN, WAN, and basic protocols.",
+    "💪 Don't worry about the score – what matters is your willingness to learn. Let's master the fundamentals together!"
+  ],
+  intermediate: [
+    "📈 Good progress! You have a solid grasp of networking basics. Now let's dive deeper into protocols and architecture.",
+    "🎯 You're on the right track! Focus on understanding how different network layers work together.",
+    "🔧 Nice work! Let's strengthen your understanding of TCP/IP and network security concepts."
+  ],
+  advanced: [
+    "🌟 Excellent performance! You have strong networking knowledge. Ready for advanced topics and real-world applications!",
+    "🏆 Outstanding! Your understanding of network concepts is impressive. Let's explore complex scenarios and optimizations.",
+    "🚀 Amazing results! You're well-prepared for advanced networking challenges and certifications."
+  ]
+};
+
+// Get random feedback message based on level
+export function getRandomFeedback(level: 'beginner' | 'intermediate' | 'advanced'): string {
+  const messages = feedbackMessages[level];
+  return messages[Math.floor(Math.random() * messages.length)];
+}
+
 export const learningContentByLevel: Record<string, LearningContent> = {
   beginner: {
     level: 'beginner',
-    title: "Programming Foundations",
-    explanation: `Welcome to your personalized learning journey! Based on your diagnostic quiz, we'll start with the fundamentals.
+    title: "Computer Networks Fundamentals",
+    explanation: `Welcome to your personalized learning journey! Based on your diagnostic quiz, we'll start with the fundamentals of Computer Networks.
 
-**What is Programming?**
-Programming is like giving instructions to a computer. Just like following a recipe to bake a cake, you write step-by-step instructions for the computer to follow.
+**What is a Computer Network?**
+A computer network is a collection of interconnected devices (computers, printers, servers) that can share data and resources with each other.
 
-**Variables - Your Data Containers**
-Think of variables as labeled boxes where you store things. You can put a number, text, or other data in these boxes and use them later.
+**Types of Networks:**
+- **LAN (Local Area Network)**: Covers a small geographic area like a home or office
+- **WAN (Wide Area Network)**: Covers large areas, like the Internet
+- **MAN (Metropolitan Area Network)**: Spans a city or campus
 
-**Example:**
-\`\`\`javascript
-let myName = "Alex";  // A box labeled 'myName' containing "Alex"
-let age = 15;         // A box labeled 'age' containing 15
-\`\`\`
+**Basic Network Devices:**
+- **Router**: Connects different networks together
+- **Switch**: Connects devices within the same network
+- **Hub**: Basic device that broadcasts data to all ports
 
 **Key Concepts to Master:**
-1. Variables and data types
-2. Basic operators (+, -, *, /)
-3. Simple if-else statements
-4. For and while loops`,
+1. Network types (LAN, WAN, MAN)
+2. Basic devices (Router, Switch, Hub)
+3. IP addresses and their purpose
+4. What protocols do (HTTP, FTP, SMTP)`,
     practiceQuestions: [
-      "Create a variable to store your favorite number and print it.",
-      "Write a simple program that adds two numbers together.",
-      "Create an if-else statement that checks if a number is positive or negative.",
-      "Write a for loop that prints numbers from 1 to 5."
+      "Explain the difference between a router and a switch.",
+      "What type of network would you use to connect computers in your home?",
+      "Why do computers need IP addresses?",
+      "Draw a simple star topology network."
     ],
     tips: [
-      "🎯 Practice coding for at least 15 minutes daily",
-      "📝 Write code by hand first, then type it",
-      "🔄 Don't be afraid to make mistakes - they help you learn!",
-      "💡 Break problems into smaller steps"
+      "🎯 Start by understanding what each network device does",
+      "📝 Create flashcards for common networking acronyms",
+      "🔄 Practice identifying network components in your daily life",
+      "💡 Remember: Routers connect networks, Switches connect devices"
     ]
   },
   intermediate: {
     level: 'intermediate',
-    title: "Building Stronger Foundations",
+    title: "Building Network Knowledge",
     explanation: `Great progress! You have a solid foundation. Let's build on that.
 
-**Object-Oriented Programming (OOP)**
-OOP is a way to organize code using "objects" - bundles of related data and functions.
+**The OSI Model (7 Layers)**
+The OSI model standardizes network communication:
 
-**The Four Pillars of OOP:**
-1. **Encapsulation**: Hiding internal details and exposing only what's necessary
-2. **Inheritance**: Creating new classes based on existing ones
-3. **Polymorphism**: Objects behaving differently based on their type
-4. **Abstraction**: Simplifying complex systems by hiding unnecessary details
+| Layer | Name | Function |
+|-------|------|----------|
+| 7 | Application | User interface (HTTP, FTP) |
+| 6 | Presentation | Data formatting |
+| 5 | Session | Connection management |
+| 4 | Transport | Reliable delivery (TCP/UDP) |
+| 3 | Network | Routing (IP addresses) |
+| 2 | Data Link | MAC addresses, Switches |
+| 1 | Physical | Cables, signals |
 
-**Data Structures Deep Dive:**
-\`\`\`javascript
-// Stack - LIFO (Last In, First Out)
-const stack = [];
-stack.push(1);  // Add to top
-stack.pop();    // Remove from top
+**Important Protocols:**
+- **TCP**: Reliable, connection-oriented (like a phone call)
+- **UDP**: Fast, connectionless (like sending mail)
+- **HTTP/HTTPS**: Web communication
+- **DNS**: Domain name to IP translation
 
-// Queue - FIFO (First In, First Out)
-const queue = [];
-queue.push(1);    // Add to back
-queue.shift();    // Remove from front
+**Network Security Basics:**
+\`\`\`
+Firewall → Filters traffic
+Encryption → Protects data
+VPN → Secure remote access
 \`\`\``,
     practiceQuestions: [
-      "Create a class 'Car' with properties like brand, model, and a method to display info.",
-      "Implement a simple stack with push and pop operations.",
-      "Write a recursive function to calculate factorial.",
-      "Create a function that reverses a string without using built-in methods."
+      "List all 7 layers of the OSI model and their main functions.",
+      "Explain the difference between TCP and UDP with examples.",
+      "What happens when you type a website URL in your browser?",
+      "How does a firewall protect a network?"
     ],
     tips: [
-      "🏗️ Start thinking about code organization",
-      "📚 Read other people's code on GitHub",
-      "🧪 Write tests for your functions",
-      "🔍 Learn to use debugging tools effectively"
+      "🏗️ Memorize OSI layers: Please Do Not Throw Sausage Pizza Away",
+      "📚 Compare TCP vs UDP – know when to use each",
+      "🧪 Use command prompt tools like ping and traceroute",
+      "🔍 Study how DNS resolution works step by step"
     ]
   },
   advanced: {
     level: 'advanced',
-    title: "Mastering Complex Concepts",
-    explanation: `Excellent! You're ready for advanced challenges.
+    title: "Mastering Network Concepts",
+    explanation: `Excellent! You're ready for advanced networking challenges.
 
-**Algorithm Analysis & Optimization**
-Understanding Big O notation is crucial for writing efficient code.
+**Subnetting & IP Addressing**
+Understanding subnetting is crucial for network design:
 
-**Time Complexity Examples:**
-- O(1): Accessing array element by index
-- O(log n): Binary search
-- O(n): Linear search
-- O(n log n): Merge sort, Quick sort (average)
-- O(n²): Bubble sort, nested loops
-
-**Advanced Data Structures:**
-\`\`\`javascript
-// Binary Search Tree Node
-class TreeNode {
-  constructor(value) {
-    this.value = value;
-    this.left = null;
-    this.right = null;
-  }
-}
-
-// Hash Map for O(1) lookups
-const hashMap = new Map();
-hashMap.set('key', 'value');
+\`\`\`
+IP Address: 192.168.1.100
+Subnet Mask: 255.255.255.0
+Network: 192.168.1.0
+Broadcast: 192.168.1.255
 \`\`\`
 
-**Design Patterns to Master:**
-- Singleton, Factory, Observer
-- MVC, MVVM architectures
-- Dependency Injection`,
+**Advanced Protocols:**
+- **BGP**: Border Gateway Protocol (Internet backbone)
+- **OSPF**: Open Shortest Path First (routing)
+- **SNMP**: Network management
+- **SSL/TLS**: Secure communications
+
+**Network Architecture Concepts:**
+- **Three-tier architecture**: Access, Distribution, Core
+- **Software-Defined Networking (SDN)**
+- **Network virtualization**
+
+**Security Deep Dive:**
+\`\`\`
+IDS/IPS → Intrusion Detection/Prevention
+DMZ → Demilitarized Zone
+ACL → Access Control Lists
+NAT → Network Address Translation
+\`\`\``,
     practiceQuestions: [
-      "Implement binary search from scratch and analyze its time complexity.",
-      "Create a balanced binary search tree with insert and search operations.",
-      "Solve a dynamic programming problem (e.g., longest common subsequence).",
-      "Implement the Observer design pattern for an event system."
+      "Calculate the number of usable hosts in a /24 subnet.",
+      "Design a network topology for a small business with 3 departments.",
+      "Explain how NAT helps with IPv4 address exhaustion.",
+      "Compare and contrast IDS and IPS systems."
     ],
     tips: [
-      "🎯 Solve algorithmic problems daily on LeetCode/HackerRank",
-      "📖 Study system design principles",
-      "🤝 Contribute to open-source projects",
-      "🧠 Teach concepts to others - it deepens your understanding"
+      "🎯 Practice subnetting calculations regularly",
+      "📖 Study for networking certifications (CCNA, Network+)",
+      "🤝 Set up a home lab to practice configurations",
+      "🧠 Understand the difference between Layer 2 and Layer 3"
     ]
   }
 };
 
 export const aiGeneratedSuggestions = {
   lowEngagement: [
-    "🎮 Try our interactive coding game to practice loops!",
-    "📹 Watch this 5-minute video explanation instead of reading",
-    "🏆 Complete today's mini-challenge to earn bonus points!",
-    "👥 Join a study group session happening in 30 minutes",
+    "🎮 Try our interactive network simulation to visualize concepts!",
+    "📹 Watch this 5-minute video on how the Internet works",
+    "🏆 Complete today's mini-challenge on network devices!",
+    "👥 Join a study group session on OSI model basics",
     "⏰ Set a reminder to practice for just 10 minutes tomorrow"
   ],
   mediumEngagement: [
-    "📈 You're doing well! Try a slightly harder problem",
-    "🎯 Focus on your weakest topic for 15 minutes",
-    "💡 Explore the bonus content section",
-    "🔄 Review yesterday's lesson to reinforce learning"
+    "📈 You're doing well! Try the TCP/IP protocol challenge",
+    "🎯 Focus on understanding subnetting for 15 minutes",
+    "💡 Explore the network security bonus content",
+    "🔄 Review the OSI model layers to reinforce learning"
   ],
   highEngagement: [
-    "🌟 Amazing progress! Ready for an advanced challenge?",
-    "🏅 You've earned a streak badge! Keep it up!",
-    "📚 Explore optional deep-dive materials",
-    "🤝 Consider becoming a peer tutor"
+    "🌟 Amazing progress! Ready for advanced routing challenges?",
+    "🏅 You've earned a networking streak badge!",
+    "📚 Explore CCNA-level materials",
+    "🤝 Consider helping peers with basic networking concepts"
   ]
 };
