@@ -47,7 +47,7 @@ The prototype can be extended into a full-scale application using React for the 
 
 ## 📝 Notes
 - This project follows an **Agile milestone-based approach**  
-- Each milestone is time-boxed to **30 minutes**  
+- Each milestone is time-boxed to **60 minutes**  
 - Suitable for **hackathons, mini-projects, and academic reviews**  
 
 
