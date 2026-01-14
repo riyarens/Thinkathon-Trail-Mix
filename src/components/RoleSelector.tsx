@@ -1,14 +1,13 @@
 import { UserRole } from '@/types/learning';
 import { Button } from '@/components/ui/button';
 import { GraduationCap, Users } from 'lucide-react';
-
 interface RoleSelectorProps {
   onSelectRole: (role: UserRole) => void;
 }
-
-export function RoleSelector({ onSelectRole }: RoleSelectorProps) {
-  return (
-    <div className="min-h-screen flex items-center justify-center p-6">
+export function RoleSelector({
+  onSelectRole
+}: RoleSelectorProps) {
+  return <div className="min-h-screen flex items-center justify-center p-6">
       <div className="max-w-4xl w-full">
         {/* Header */}
         <div className="text-center mb-12 animate-fade-in">
@@ -16,7 +15,7 @@ export function RoleSelector({ onSelectRole }: RoleSelectorProps) {
             <GraduationCap className="w-10 h-10 text-primary-foreground" />
           </div>
           <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
-            Smart Learning Support
+            ​MindSpark  
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             AI-powered personalized learning and early intervention system for better educational outcomes
@@ -24,12 +23,11 @@ export function RoleSelector({ onSelectRole }: RoleSelectorProps) {
         </div>
 
         {/* Role Cards */}
-        <div className="grid md:grid-cols-2 gap-6 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+        <div className="grid md:grid-cols-2 gap-6 animate-slide-up" style={{
+        animationDelay: '0.2s'
+      }}>
           {/* Student Card */}
-          <button
-            onClick={() => onSelectRole('student')}
-            className="group relative p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg text-left"
-          >
+          <button onClick={() => onSelectRole('student')} className="group relative p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg text-left">
             <div className="absolute inset-0 rounded-2xl bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity" />
             <div className="relative">
               <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
@@ -64,10 +62,7 @@ export function RoleSelector({ onSelectRole }: RoleSelectorProps) {
           </button>
 
           {/* Teacher Card */}
-          <button
-            onClick={() => onSelectRole('teacher')}
-            className="group relative p-8 rounded-2xl bg-card border border-border hover:border-beginner/50 transition-all duration-300 hover:shadow-lg text-left"
-          >
+          <button onClick={() => onSelectRole('teacher')} className="group relative p-8 rounded-2xl bg-card border border-border hover:border-beginner/50 transition-all duration-300 hover:shadow-lg text-left">
             <div className="absolute inset-0 rounded-2xl bg-beginner/5 opacity-0 group-hover:opacity-100 transition-opacity" />
             <div className="relative">
               <div className="w-14 h-14 rounded-xl bg-beginner/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
@@ -103,10 +98,11 @@ export function RoleSelector({ onSelectRole }: RoleSelectorProps) {
         </div>
 
         {/* Footer Note */}
-        <p className="text-center text-sm text-muted-foreground mt-12 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+        <p className="text-center text-sm text-muted-foreground mt-12 animate-fade-in" style={{
+        animationDelay: '0.4s'
+      }}>
           🎓 This is a prototype demonstrating AI-powered educational support without machine learning
         </p>
       </div>
-    </div>
-  );
+    </div>;
 }
